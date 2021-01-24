@@ -21,27 +21,27 @@
       <h2 class="heading">My Todo-list</h2>
       <div class="todo-container">
         <form>
-          <input type="text" class="todo-input" />
-          <button class="todo-button" type="submit">
-            <i class="fas fa-plus-square"></i>
-          </button>
-        
+          <div class="input-wrapper mb-50">
+            <input type="text" class="todo-input" placeholder="Enter Task Name" />
+            <button class="todo-button" type="submit">
+              <i class="fas fa-plus-square"></i>
+            </button>
+
+          </div>
+          <div class="input-wrapper">
+            <input type="text" class="search" placeholder="Search anythings"/>
             <select class="filter-todo" name="todos">
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="uncompleted">Uncompleted</option>
             </select>
-         
-          
+          </div>
+    
         </form>
 
         <div class="todo-box">
+          
           <ul class="todo-list">
-            <div class="todo">
-                <li class="todo-item">sdfgsdfg</li>
-                <button class="delete-btn"><i class="fas fa-trash"></i></button>
-                <button class="complete-btn"><i class="fas fa-check"></i></button>
-            </div>
               </ul>
       </div>
     </div>

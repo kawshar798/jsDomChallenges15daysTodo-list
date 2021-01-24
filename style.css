@@ -14,11 +14,11 @@ input:focus {
 }
 .heading {
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 .main-container {
   display: flex;
   align-items: center;
-
   flex-direction: column;
   background: #f8f9fa;
   height: 100vh;
@@ -29,26 +29,30 @@ input:focus {
 .todo-container {
   background: #204ecf;
   padding: 10px;
-  min-width: 300px;
+  min-width: 400px;
   min-height: 20vh;
   border-radius: 5px;
 }
+.mb-50 {
+  margin-bottom: 50px !important;
+}
 
-form {
+form .input-wrapper {
   width: 100%;
   background: #fff;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 form input,
 form button {
   border: none;
   padding: 10px;
 }
-form input {
-  width: 60%;
+form .input-wrapper input {
+  width: 70%;
 }
-form button {
+form .input-wrapper button {
   width: 10%;
   color: #fff;
   background: #00cc83;
@@ -59,7 +63,6 @@ form button:hover {
   color: #204ecf;
 }
 .todo-list {
-  margin-top: 30px;
   list-style: none;
 }
 .todo {
@@ -102,7 +105,7 @@ form button:hover {
 
 select {
   color: #00cc83;
-  width: 18px;
   cursor: pointer;
   width: 30%;
+  border-left: 1px solid #00cc83;
 }
