@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded',getTodos);
 function addTodo(event){
     event.preventDefault();
     if(todoInput.value === ''){
-        alert("Please Enter Task Name");
+        showErrorMessage("Please Enter valid Value");
     }else{
 
 //create todo Div
@@ -220,5 +220,33 @@ function removeTodos(todo){
         console.log(todoIndex);
 }
 
+
+//show Error Message
+function showErrorMessage(error){
+
+    //create div
+    const errorDiv = document.createElement("div");
+
+    //Add class in error div
+    errorDiv.className="danger-alrt";
+
+    //Get Elements
+    const mainContainer = document.querySelector(".main-container");
+    const todoContainer = document.querySelector(".todo-container");
+
+    //Create text node and append to div
+    errorDiv.appendChild(document.createTextNode(error));
+
+    //Insert Error  div in main container
+    mainContainer.insertBefore(errorDiv,todoContainer);
+
+    //Clear TExt 
+
+    setTimeout(clearErrorText, 3000);
+
+}
+function clearErrorText(){
+    document.querySelector('.danger-alrt').remove();
+}
 
 

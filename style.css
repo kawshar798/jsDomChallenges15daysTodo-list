@@ -109,3 +109,11 @@ select {
   width: 30%;
   border-left: 1px solid #00cc83;
 }
+.danger-alrt {
+  background: #ff0000b8;
+  color: #fff;
+  min-width: 400px;
+  text-align: center;
+  margin-bottom: 6px;
+  border-radius: 2px;
+}
